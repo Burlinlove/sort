@@ -2,5 +2,5 @@
 
 | Sort Method     |   TC:best   | TC:average  | TC:worst    | Memory | Stable |
 | --------------- | :---------: | ----------- | ----------- | ------ | ------ |
-| $$ MergeSort $$ | $$ nlogn $$ | $$ nlogn $$ | $$ nlogn $$ | n      |        |
+| $$ MergeSort $$ | $$ nlogn $$ | $$ nlogn $$ | $$ nlogn $$ | n      | Yes    |
 
