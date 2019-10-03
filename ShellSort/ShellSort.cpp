@@ -50,7 +50,7 @@ int main() {
 	}
 
 	Solution ss;
-	ss.ShellSort(nums);
+	ss.Sort(nums);
 
 	for (int i = 0; i < nums.size(); i++)
 		cout << nums[i] << ' ';
