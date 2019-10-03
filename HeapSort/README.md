@@ -2,5 +2,5 @@
 
 | Sort Method    |   TC:best   | TC:average  | TC:worst    | Memory | Stable |
 | -------------- | :---------: | ----------- | ----------- | ------ | ------ |
-| $$ HeapSort $$ | $$ nlogn $$ | $$ nlogn $$ | $$ nlogn $$ | 1      | No     |
+| $$ HeapSort $$ | $$ n $$ | $$ nlogn $$ | $$ nlogn $$ | 1      | No     |
 
