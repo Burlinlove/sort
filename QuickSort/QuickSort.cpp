@@ -14,7 +14,7 @@ public:
 			int pivot = nums[high];
 			int i = low - 1;
 			for (int j = low; j < high; j++)
-				if (nums[j] < nums[high])
+				if (nums[j] < pivot)
 					swap(nums[++i], nums[j]);
 
 			swap(nums[i + 1], nums[high]);
