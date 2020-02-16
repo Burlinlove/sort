@@ -6,15 +6,31 @@ using namespace std;
 class Solution {
 public:
 	void Sort(vector<int>& nums) {
-		MergeSort(nums, 0, nums.size() - 1);
+		MergeSortRecursive(nums, 0, nums.size() - 1);       //递归
+		//MergeSortNonRecursive(nums);                      //非递归
 	}
 
-	void MergeSort(vector<int>& nums, int left, int right) {
+	void MergeSortRecursive(vector<int>& nums, int left, int right) {  // 递归版本
 		if (left < right) {
 			int mid = (left + right) / 2;
 			MergeSort(nums, left, mid);
 			MergeSort(nums, mid + 1, right);
 			Merge(nums, left, mid, right);
+		}
+	}
+
+	void MergeSortNonRecursive(vector<int> &nums) {  // 非递归版本
+		int n = nums.size();
+		int s = 1;
+		while (s <= n){
+			int i = 0;
+			while (i + 2*s - 1 < n){
+				Merge(nums, i, i + s - 1, i + 2*s - 1);
+				i += 2*s;
+			}
+			if (i + s < n)
+				Merge(nums, i, i+s-1 , n - 1);
+			s *= 2;
 		}
 	}
 
